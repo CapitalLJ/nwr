@@ -9,7 +9,7 @@ pub fn make_subcommand() -> Command {
                 .help("The NCBI Taxonomy ID or scientific name")
                 .required(true)
                 .num_args(1)
-                .index(1),
+                .index(1),     // 接受输入文件和taxID列表
         )
         .arg(
             Arg::new("dir")
